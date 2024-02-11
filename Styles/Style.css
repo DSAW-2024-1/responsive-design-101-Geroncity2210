@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Outfit;
+    font-size: 1rem;
+}
+.text-content{
+    padding: 2rem; /*Padding para indexar todo menos la imagen*/
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+h1 {
+    font-family: young serif;
+    font-size: 3rem;
+  }
+h2{
+    font-family: young serif;
+    font-size: 1.5rem;
+    color: hsl(14, 45%, 36%);
+  }
+h3{
+
+    font-size: 1rem;
+    color: hsl(332, 51%, 32%);
+  }
+  span{
+    font-weight: bold;
+  }
+main {
+    width: 100vw; /* para mobile, que main tome todo VP*/
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-viewer img{
+    width: 100%;/*ocupar todo el ancho del viewport*/
+}
+.first-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.second-section{
+    width: 95%; /*Ocupar el 95% de vp, util en el responsive*/
+    padding: 1.7rem;
+    background-color:  hsl(330, 63%, 97%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        padding-left: 2.3rem;
+    }
+}
+.third-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+        padding-left: 1rem;
+        
+        
+    }
+
+}
+.fourth-section{    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    ol{
+        display: flex;
+        flex-direction: column;
+        gap: 1.1rem;
+        padding: 1rem;
+    }
+
+}
+.fifth-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    table{
+        tr{
+            display: flex;
+            gap: 1.5rem;
+            border-bottom: 5px;
+            border-bottom: solid;
+            border-color: rgb(196, 193, 193);
+        }
+        td{
+            padding: 0.7rem;
+        }
+    }
+    .data{
+        font-weight: 600;
+        color:hsl(332, 51%, 32%);
+    }
+}
+
+@media screen and (min-width:768px) {
+    
+}
+@media screen and (min-width:1024px)  {
+    body {
+        background-color: hsl(30, 54%, 90%);
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+    main {
+        background-color: hsl(0, 0%, 100%);
+        padding: 2rem;
+        border-radius: 30px;
+        width: 40%;
+        height: auto;
+        /* margin: 1.2rem; */
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+      .image-viewer img {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+      }
+
+    
+}
+
+
